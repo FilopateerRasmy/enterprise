@@ -1,0 +1,73 @@
+.enterprise {
+  @include flex;
+  gap: 2rem;
+  @include breakpointDown(medium){
+    flex-wrap: wrap;
+  }
+  &-box {
+    @include breakpointDown(medium){
+      flex-basis: 100%;
+      flex-wrap: wrap;
+    }
+    flex-basis: 70%;
+    @include flex;
+    gap: 2rem;
+    border-style: dashed;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-color: rgba($color-black, 0.2);
+    padding: 0rem 2rem;
+  }
+
+  &__am {
+    flex-basis: 30%;
+    @include breakpointDown(medium){
+      flex-basis: 100%;
+      order: 2;
+    }
+  }
+
+  &__date {
+    color: $color-grey-dark;
+  }
+
+  &__news {
+    flex-basis: 70%;
+    @include breakpointDown(medium){
+      flex-basis: 100%;
+      order: 1;
+    }
+
+  }
+
+  &-editor-box {
+    flex-basis: 30%;
+    @include breakpointDown(medium){
+      flex-basis: 100%;
+     
+    }
+    &__sub-news {
+      @include flex(space-between, flex-start);
+      gap: 2rem;
+      & div {
+        flex: 1;
+      }
+    }
+ 
+  }
+
+  &-industry {
+    margin: 2.4rem 0;
+   
+
+    &__title {
+      display: inline-block;
+      padding: .8rem 1.6rem;
+      margin:0 auto ;
+      background-color: $color-black;
+      border-radius: 2px;
+    }
+  }
+}

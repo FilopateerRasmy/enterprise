@@ -1,0 +1,14 @@
+.sperator {
+  width: 1px;
+  height: 16px;
+  background-color: $color-grey-dark;
+
+  &-dashed{
+    border: 1px dashed rgba($color-black, 0.2);
+  }
+
+  &-horizontal{
+    height: 1px;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+  }
+}

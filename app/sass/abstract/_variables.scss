@@ -1,0 +1,28 @@
+//colors
+$color-primary:#29990B;
+$color-primary-light:#00E277;
+$color-grey-dark:#8D8D8D;
+$color-light-dark:#434343;
+$color-white:#fff;
+$color-black:#000;
+$color-red:#FF4B5F;
+$color-orange: #FF7801;
+$color-green-light:#94CC85;
+$color-grey-extra-dark: #555555;
+$color-yellow:#F7A41A;
+
+// font sizes
+
+$small-font-size: 1.2rem;
+$medium-font-size: 1.4rem;
+$large-font-size: 1.6rem;
+$xlarge-font-size: 3.2rem;
+$card-title-font-size:1.8rem;
+$subscription-font-size:2.4rem;
+// font-family
+
+$font-family-ibm-plex:'IBM Plex Sans Arabic', sans-serif;
+$font-family-roboto:'Roboto', sans-serif;
+$font-family-merriweather: 'Merriweather', serif;
+//breakpoints
+$breakpoints :('small':450px, 'medium': 760px,'large':1000px, 'xlarge':1400px );

@@ -1,0 +1,14 @@
+.fieldset{
+   
+    border:0.2rem solid $color-primary ;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    &__legend{
+        margin: 0 auto;
+        color: $color-black;
+        padding: 0rem 2rem;
+    }
+
+
+}

@@ -1,0 +1,48 @@
+.header {
+  &__partial {
+    @include flex(center, center);
+    padding: 2rem 3rem 1rem;
+    gap: 1rem;
+
+    &__edition {
+      font-family: $font-family-roboto;
+      font-size: $small-font-size;
+      color: $color-grey-dark;
+      gap: 0.4px;
+      @include flex(flex-start, center);
+    }
+  }
+
+  &-logo-container {
+    @include flex(space-between, center);
+    padding: 0rem 0rem 2rem 0rem;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
+    font-size: $medium-font-size;
+    color: $color-black;
+
+    &__actions {
+      @include flex(flex-start, center);
+      gap: 1.6rem;
+          @include breakpointDown(medium){
+      display: none;
+     }
+    }
+
+    &__box {
+      @include flex(flex-start, center);
+      padding: 0px;
+      gap: 0.4rem;
+      font-family: $font-family-ibm-plex;
+      font-weight: 700;
+        @include breakpointDown(medium){
+      display: none;
+     }
+    }
+    &__buttons {
+      @include flex(flex-end, center);
+      gap: 1.6rem;
+    }
+  }
+}

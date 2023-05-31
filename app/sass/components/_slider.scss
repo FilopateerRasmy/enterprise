@@ -1,0 +1,46 @@
+.slider {
+  @include flex(flex-start, flex-start);
+  overflow-x: hidden;
+  gap: 1rem;
+  position: relative;
+  @include breakpointDown(medium){
+    flex-wrap: wrap;
+   }
+
+  &__item {
+    min-width: 24.2%;
+ 
+    text-align: start;
+    transition: transform .2s;
+  }
+
+  &__btn {
+    @include flex(center, center);
+
+    padding: 1rem;
+
+    position: absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+
+    background-color: $color-black !important;
+    border-radius: 2px;
+
+    &--left {
+      left: -48px;
+      top: calc(50% - 32px / 2 + 0.09px);
+
+      @include breakpointDown(medium){
+        display: none;
+      }
+    }
+
+    &--right {
+      right: -48px;
+      top: calc(50% - 32px / 2 + 0.09px);
+      @include breakpointDown(medium){
+        display: none;
+      }
+    }
+  }
+}

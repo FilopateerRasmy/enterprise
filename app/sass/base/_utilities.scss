@@ -1,0 +1,103 @@
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-text-transform-upper {
+  text-transform: uppercase;
+}
+.u-dark-light{
+  color: rgba($color-black, 0.7) !important;
+}
+.u-icon-img-small {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.u-icon-img-medium {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.u-icon-img-large {
+  width: 2rem;
+  height: 2rem;
+}
+
+.u-w-full {
+  width: 100%;
+}
+.u-font-family-ibm-plex {
+  font-family: $font-family-ibm-plex;
+  font-weight: 700;
+}
+.u-font-family-roboto {
+  font-family: $font-family-roboto;
+  font-weight: 400;
+}
+.u-font-weigh-700 {
+  font-weight: 700;
+}
+
+.u-sm-font-size {
+  font-size: $small-font-size;
+}
+.u-md-font-size {
+  font-size: $medium-font-size;
+}
+.u-lg-font-size {
+  font-size: $large-font-size !important;
+}
+.u-xl-font-size {
+  font-size: $xlarge-font-size;
+}
+
+.u-container {
+  width: 90%;
+  margin: 0 auto;
+
+ @include breakpointDown(medium){
+  width: 95%;
+ }
+}
+.u-mt-2{
+  margin-top: .2rem;
+}
+.u-my-8 {
+  margin: 0.8rem 0rem;
+}
+.u-mt-9 {
+  margin-top: 0.9rem;
+}
+.u-mt-10 {
+  margin-top: 1rem;
+}
+.u-mb-24{
+  margin-bottom: 2.4rem;
+}
+
+.u-position-relative{
+  position: relative;
+}
+
+.u-m-10{
+  margin: 1rem;
+}
+.w-30{
+  width: 30%;
+}
+.color-light-dark{
+  color: $color-light-dark;
+}
+.u-m-none{
+  @include breakpointDown(medium){
+    display: none !important;
+   }
+}

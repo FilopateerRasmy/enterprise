@@ -1,0 +1,50 @@
+.card {
+  @include flex(center, flex-start, column);
+  padding: 2rem;
+  gap: 1rem;
+  background: #ffffff;
+  border: 0.75px solid rgba($color-black, 0.2);
+  border-radius: 2px;
+
+  @include breakpointDown(medium){
+    max-width: 95%;
+   }
+  &__title {
+    line-height: 23px;
+    @include setfont($font-family-merriweather, 300, $card-title-font-size);
+    color: $color-black;
+    padding-top: 1.3rem;
+    &__bold {
+      font-weight: 700;
+    }
+  }
+
+
+  &-paragraph {
+    @include setfont($font-family-roboto, 400, $medium-font-size);
+
+    color: $color-light-dark;
+  }
+
+  &--fixed-height{
+    min-height: 197.81px;
+    max-height: 197.81px;
+  
+  }
+
+  &--green {
+    box-shadow: inset 0px 4px 0px $color-primary;
+  }
+  &--light-green {
+    box-shadow: inset 0px 4px 0px $color-green-light;
+  }
+  &--orange {
+    box-shadow: inset 0px 4px 0px $color-orange;
+  }
+  &--grey {
+    box-shadow: inset 0px 4px 0px $color-grey-extra-dark;
+  }
+  &--yellow {
+    box-shadow: inset 0px 4px 0px $color-yellow;
+  }
+}

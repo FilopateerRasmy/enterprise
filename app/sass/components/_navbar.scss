@@ -1,0 +1,24 @@
+.navbar{
+    @include flex(center, flex-start);
+    color: $color-black;
+    font-size: $medium-font-size;
+     padding: 0 4.9rem;
+     @include breakpointDown(medium){
+        display: none;
+      }
+    &-box{
+        @include flex(space-between,center);
+        box-shadow: 0px -1px 0px rgba($color-black, 0.2), 0px 1px 0px rgba($color-black, 0.2);
+        gap: 1rem;
+        width: 96%;
+    }
+    &__item{
+        display: inline-block;
+        padding: 1.6rem 1.2rem;
+        font-family: $font-family-roboto;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+
+    }
+}

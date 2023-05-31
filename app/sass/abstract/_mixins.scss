@@ -1,0 +1,17 @@
+@mixin flex($justify: "flex-start", $alignitems:"flex-start", $direction:"row" ){
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignitems;
+    flex-direction: $direction;
+
+}
+@mixin setfont($font-family:inherit, $weight:inherit, $font-size:inherit){
+    font-family: $font-family;
+    font-weight: $weight;
+    font-size: $font-size;
+}
+@mixin breakpointDown($size){
+    @media screen and (max-width: map-get($breakpoints, $size)) {
+        @content
+    }
+}

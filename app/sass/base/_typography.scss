@@ -1,0 +1,43 @@
+body {
+  font-weight: 400;
+  line-height: 1.5;
+}
+.ticker__stock__element__text {
+  @include setfont($font-family-roboto, 400);
+}
+.enterprise {
+  &__title {
+    @include setfont($font-family-roboto, 700, $small-font-size);
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &-paragraph {
+    @include setfont($font-family-roboto, 400, $medium-font-size);
+    color: $color-light-dark;
+  }
+
+  &_news {
+    &__title {
+      @include setfont($font-family-merriweather, 700, $xlarge-font-size);
+      @include breakpointDown(medium){
+        font-size: 2.3rem;
+      }
+      color: $color-black;
+    }
+  }
+
+  &-editor-box {
+    &__title {
+      @include setfont($font-family-merriweather, 700, $medium-font-size);
+      color: $color-black;
+    }
+  }
+
+  &-industry{
+    &__title{
+      @include setfont($font-family-merriweather, 700, $card-title-font-size);
+      color: $color-white;
+    }
+  }
+}

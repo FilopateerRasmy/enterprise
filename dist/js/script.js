@@ -1,0 +1,2 @@
+"use strict";var slider=function(){var e=document.querySelectorAll(".slide"),t=document.querySelector(".slider__btn--left"),n=document.querySelector(".slider__btn--right"),c=0,r=(e.length,function(t){e.forEach((function(e,n){e.style.transform=0===t?"translateX(".concat(1*(n-t),"%)"):"translateX(-".concat(100,"%)")}))});r(0),n.addEventListener("click",(function(){1===c?c=0:c++,r(c)})),t.addEventListener("click",(function(){console.log("prev",c),0===c?c=1:c--,r(c)}))};slider();
+//# sourceMappingURL=script.js.map
